@@ -1,7 +1,11 @@
-import '../styles/globals.css'
+import NavBar from "../components/NavBar";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function App({ Component, pageProps }) {
+  return (
+    <div>
+      <NavBar />
+      <Component {...pageProps} />
+      <span>헬로우</span>
+    </div>
+  );
 }
-
-export default MyApp
